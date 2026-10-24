@@ -1,5 +1,6 @@
 import BarraNavegacion from "./components/BarraNavegacion/BarraNavegacion";
 import "./App.css";
+import SeccionHero from "./components/SeccionHero/SeccionHero";
 
 function App() {
   
@@ -8,6 +9,8 @@ function App() {
     <>
 
     <BarraNavegacion /> 
+    <SeccionHero />
+
     </>
   );
 }
