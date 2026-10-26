@@ -1,5 +1,5 @@
 import {Container, Row, Col} from "react-bootstrap";
-import BotonColor from "../BotonColor.tsx/BotonColor";
+import BotonColor from "../BotonColor/BotonColor";
 
 const SeccionHero = () => {
   return (

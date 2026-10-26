@@ -1,17 +1,20 @@
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BarraNavegacion from "./components/BarraNavegacion/BarraNavegacion";
-import "./App.css";
 import SeccionHero from "./components/SeccionHero/SeccionHero";
+import Tareas from "./pages/Tareas";
+import "./App.css";
 
 function App() {
-  
-
   return (
-    <>
+    <BrowserRouter>
+      <BarraNavegacion />
 
-    <BarraNavegacion /> 
-    <SeccionHero />
-
-    </>
+      <Routes>
+        <Route path="/" element={<SeccionHero />} />
+        <Route path="/tareas" element={<Tareas />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
